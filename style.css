@@ -280,6 +280,15 @@ section {
   line-height: 1.6;
 }
 
+.hero .company-line {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;

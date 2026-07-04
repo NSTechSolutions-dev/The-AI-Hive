@@ -1,0 +1,14 @@
+[Unit]
+Description=The AI Hive static website publisher
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/The-AI-Hive
+Environment=SOURCE_DIR=/opt/The-AI-Hive
+Environment=WEB_ROOT=/var/www/the-ai-hive
+ExecStart=/bin/bash /opt/The-AI-Hive/scripts/publish-static-site.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
